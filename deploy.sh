@@ -44,7 +44,7 @@ npm install --legacy-peer-deps  # More permissive dependency resolution
 # --- Configure Environment ---
 echo "Setting up environment..."
 if [ ! -f ".env" ]; then
-  cp .env.example .env
+  cp .env.local.example .env
   sed -i "s/PORT=.*/PORT=$PORT/" .env
   echo "Created .env file with default settings."
 else
